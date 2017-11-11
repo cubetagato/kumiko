@@ -1,0 +1,29 @@
+{
+  "name": "kumiko",
+  "version": "0.0.1",
+  "description": "Kumiko, The Treasure Hunter API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "kumiko",
+    "the",
+    "treasure",
+    "hunter",
+    "api"
+  ],
+  "author": "kubeton",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.0",
+    "morgan": "^1.9.0",
+    "nconf": "^0.9.1",
+    "restify": "^6.3.1",
+    "restify-errors": "^5.0.0",
+    "winston": "^2.4.0"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "server": {
+    "name": "api.stage.one",
+    "port": 3333,
+    "version": "0.0.1",
+    "acceptable": ["application/json"],
+    "host": "localhost",
+    "cors": {
+        "credentials": false,
+        "origins": [],
+        "headers": []
+    }
+  },
+  "logger": {
+    "file": {
+      "level": "debug",
+      "file_name": "./stageone.debug.log",
+      "handle_exceptions": true,
+      "json": false,
+      "maxsize": 5242880,
+      "maxfiles": 5,
+      "colorize": true
+    }
+  },
+  "db": {
+    "host": "mongodb://localhost",
+    "port": 4546,
+    "name": "stageone",
+    "user": "hdzgabriel",
+    "pass": "password"
+  },
+  "security": {
+    "secret": "parangarikutirimikuaro"
+  },
+  "api": {
+    "version":"0.0.1",
+    "base": "/api"
+  }
+}
