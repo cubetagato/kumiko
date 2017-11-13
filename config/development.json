@@ -1,20 +1,12 @@
 {
   "server": {
-    "name": "api.stage.one",
-    "port": 3333,
-    "version": "0.0.1",
-    "acceptable": ["application/json"],
-    "host": "localhost",
-    "cors": {
-        "credentials": false,
-        "origins": [],
-        "headers": []
-    }
+    "name": "dev.kumiko",
+    "version": "0.0.1"
   },
   "logger": {
     "file": {
       "level": "silly",
-      "file_name": "./stageone.debug.log",
+      "file_name": "./kumiko.debug.log",
       "handle_exceptions": true,
       "json": false,
       "maxsize": 5242880,
@@ -29,14 +21,11 @@
     }
   },
   "db": {
-    "host": "mongodb://localhost",
-    "port": 4546,
-    "name": "stageone",
-    "user": "hdzgabriel",
-    "pass": "password"
-  },
-  "security": {
-    "secret": "parangarikutirimikuaro"
+    "host": "mongodb://192.168.155.3",
+    "port": 27017,
+    "name": "kumiko",
+    "user": "kumiko",
+    "pass": "tr34su53"
   },
   "api": {
     "version":"0.0.1",

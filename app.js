@@ -3,7 +3,6 @@
 const config = require('./lib/configuration');
 const log = require('./lib/utils/logger');
 const app = require('./lib/utils/server');
-//const db = require('./lib/utils/db');
 
 (function main () {
 

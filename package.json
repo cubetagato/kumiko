@@ -20,10 +20,12 @@
     "body-parser": "^1.18.2",
     "jsonwebtoken": "^8.1.0",
     "mongoose": "^4.13.0",
+    "mongose": "0.0.2-security",
     "morgan": "^1.9.0",
     "nconf": "^0.9.1",
     "restify": "^6.3.1",
     "restify-errors": "^5.0.0",
+    "restify-router": "^0.5.0",
     "winston": "^2.4.0"
   }
 }
