@@ -4,8 +4,8 @@
   "description": "Kumiko, The Treasure Hunter API",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha ./test/test-api.js",
+    "start": "SET NODE_ENV=development && nodemon app.js"
   },
   "keywords": [
     "kumiko",
@@ -17,7 +17,9 @@
   "author": "kubeton",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
+    "crypto": "^1.0.1",
     "jsonwebtoken": "^8.1.0",
     "mongoose": "^4.13.0",
     "mongose": "0.0.2-security",
@@ -27,5 +29,9 @@
     "restify-errors": "^5.0.0",
     "restify-router": "^0.5.0",
     "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0"
   }
 }

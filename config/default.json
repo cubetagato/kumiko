@@ -30,7 +30,9 @@
     "pass": "password"
   },
   "security": {
-    "secret": "parangarikutirimikuaro"
+    "secret": "parangarikutirimikuaro",
+    "sal_rounds": 10,
+    "jwt_expire_time": 600
   },
   "api": {
     "version":"0.0.1",

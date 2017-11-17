@@ -11,4 +11,6 @@ const app = require('./lib/utils/server');
   server.listen(config.get('server:port'), config.get('server:host'), function () {
     log.info('Listening at ' + server.url);
   });
+
+  module.exports = server;
 })();
